@@ -7,7 +7,6 @@ export var front_texture: Texture
 export var back_texture: Texture
 
 
-# Called when the node enters the scene tree for the first time.
 func _ready():
 	set_texture()
 
@@ -22,11 +21,7 @@ func set_texture(a_texture = null):
 func flip_texture():
 	is_face_up = !is_face_up
 	set_texture()
-	
+
 
 func flip():
 	ap.play("flip")
-
-
-func _on_Button_pressed():
-	flip()
