@@ -8,11 +8,32 @@
 
 config_version=4
 
+_global_script_classes=[ {
+"base": "TextureRect",
+"class": "Card",
+"language": "GDScript",
+"path": "res://scenes/card/card.gd"
+}, {
+"base": "Tween",
+"class": "CardTween",
+"language": "GDScript",
+"path": "res://scenes/tweening/card_tween.gd"
+} ]
+_global_script_class_icons={
+"Card": "",
+"CardTween": ""
+}
+
 [application]
 
 config/name="Card-flipping"
 run/main_scene="res://scenes/tmp/tmp.tscn"
 config/icon="res://icon.png"
+
+[display]
+
+window/size/width=1920
+window/size/height=1080
 
 [physics]
 

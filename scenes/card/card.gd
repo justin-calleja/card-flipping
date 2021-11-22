@@ -1,4 +1,7 @@
 extends TextureRect
+class_name Card
+
+const CardTween = preload("res://scenes/tweening/card_tween.gd")
 
 onready var ap: AnimationPlayer = $AnimationPlayer
 
@@ -25,3 +28,5 @@ func flip_texture():
 
 func flip():
 	ap.play("flip")
+
+
