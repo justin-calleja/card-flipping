@@ -27,6 +27,7 @@ margin_left = 222.0
 margin_top = 2.0
 margin_right = 392.0
 margin_bottom = 247.0
+texture = ExtResource( 4 )
 front_texture = ExtResource( 4 )
 
 [connection signal="pressed" from="Button" to="." method="_on_flip_button_pressed"]
